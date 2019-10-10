@@ -211,7 +211,7 @@ int main() try
 		}
 
 		if (k == int('s')) {
-			std::string name = "D:\\saved_pcd_" + std::to_string(saved++) + ".pcd";
+			std::string name = "saved_pcd_" + std::to_string(saved++) + ".pcd";
 			pcl::io::savePCDFile(name, *point_cloud_ptr);
 			std::cerr << "Saved " << point_cloud_ptr->points.size() << " data points to " << name << std::endl;
 		}
